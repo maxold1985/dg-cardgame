@@ -1,0 +1,12 @@
+--ST1-10 Phoenixmon
+local s,id=GetID()
+function s.initial_effect(c)
+	aux.AddLevel(c,6)
+	aux.AddForm(c,FORM_MEGA)
+	aux.AddAttribute(c,ATTRIBUTE_VACCINE)
+	aux.AddRace(c,RACE_HOLY_BEAST)
+	--digimon
+	aux.EnableDigimonAttribute(c)
+	--digivolution condition
+	aux.AddDigivolutionCondition(c,2)
+end

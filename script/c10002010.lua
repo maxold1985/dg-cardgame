@@ -1,0 +1,12 @@
+--ST2-10 Plesiomon
+local s,id=GetID()
+function s.initial_effect(c)
+	aux.AddLevel(c,6)
+	aux.AddForm(c,FORM_MEGA)
+	aux.AddAttribute(c,ATTRIBUTE_DATA)
+	aux.AddRace(c,RACE_PLESIOSAUR)
+	--digimon
+	aux.EnableDigimonAttribute(c)
+	--digivolution condition
+	aux.AddDigivolutionCondition(c,2)
+end
